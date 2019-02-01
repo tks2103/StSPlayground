@@ -20,10 +20,15 @@ import java.util.ArrayList;
 
 public class TimeCharacter extends CustomPlayer {
 
-    public static final String[] orbTextures = {};
+    public static final String[] orbTextures = null;
+    public static final String orbVfxPath = null;
 
     public TimeCharacter (String name) {
-        super(name, TimeEnum.TimeClass, orbTextures, "images/corpse.png", null);
+        super(name,
+                TimeEnum.TimeClass,
+                orbTextures,
+                orbVfxPath,
+                new SpriterAnimation("images/witch.scml"));
 
         // required by core game
         this.dialogX = (this.drawX + 0.0F * Settings.scale);
