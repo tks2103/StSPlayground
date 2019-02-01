@@ -1,6 +1,7 @@
 package characters;
 
 import basemod.abstracts.CustomPlayer;
+import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -27,8 +28,7 @@ public class TimeCharacter extends CustomPlayer {
                 TimeEnum.TimeClass,
                 orbTextures,
                 orbVfxPath,
-                (String)null,
-                (String)null);
+                new SpriterAnimation("animations/time.scml"));
 
         // required by core game
         this.dialogX = (this.drawX + 0.0F * Settings.scale);
@@ -70,7 +70,13 @@ public class TimeCharacter extends CustomPlayer {
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
         retVal.add("Strike_Time");
-        //retVal.add("Defend_Red");
+        retVal.add("Strike_Time");
+        retVal.add("Strike_Time");
+        retVal.add("Strike_Time");
+        retVal.add("Strike_Time");
+        retVal.add("Strike_Time");
+        retVal.add("Strike_Time");
+        retVal.add("Strike_Time");
         return retVal;
     }
 
