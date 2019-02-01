@@ -28,7 +28,7 @@ public class TimeCharacter extends CustomPlayer {
                 TimeEnum.TimeClass,
                 orbTextures,
                 orbVfxPath,
-                new SpriterAnimation("images/witch.scml"));
+                new SpriterAnimation("images/time.scml"));
 
         // required by core game
         this.dialogX = (this.drawX + 0.0F * Settings.scale);
