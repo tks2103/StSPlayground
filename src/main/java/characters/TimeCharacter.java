@@ -1,7 +1,6 @@
 package characters;
 
 import basemod.abstracts.CustomPlayer;
-import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -70,8 +69,8 @@ public class TimeCharacter extends CustomPlayer {
     @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add("Strike");
-        retVal.add("Defend");
+        retVal.add("Strike_Time");
+        //retVal.add("Defend_Red");
         return retVal;
     }
 
