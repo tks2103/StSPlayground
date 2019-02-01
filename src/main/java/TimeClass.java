@@ -34,7 +34,7 @@ public class TimeClass implements PostBattleSubscriber, EditCharactersSubscriber
 
         BaseMod.addCharacter(new TimeCharacter("Time"),
                 "images/button.png",
-                "images/portait.png",
+                "images/portrait.png",
                 TimeEnum.TimeClass);
     }
 }
