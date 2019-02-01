@@ -1,3 +1,4 @@
+import characters.TimeCharacter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -7,6 +8,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import basemod.BaseMod;
 import basemod.interfaces.PostBattleSubscriber;
+import patches.TimeEnum;
 
 @SpireInitializer
 public class TimeClass implements PostBattleSubscriber, EditCharactersSubscriber {
@@ -29,11 +31,10 @@ public class TimeClass implements PostBattleSubscriber, EditCharactersSubscriber
     @Override
     public void receiveEditCharacters() {
         logger.info("adding character");
-/*
-        BaseMod.addCharacter(new WitchCharacter("The Witch"),
+
+        BaseMod.addCharacter(new TimeCharacter("Time"),
                 "images/button.png",
-                "images/portait.png"),
+                "images/portait.png",
                 TimeEnum.TimeClass);
-                */
     }
 }
