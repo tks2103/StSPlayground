@@ -10,5 +10,5 @@ public class TimeEnum {
     public static AbstractPlayer.PlayerClass TimeClass;
 
     @SpireEnum
-    public static AbstractCard.CardColor Time;
+    public static AbstractCard.CardColor TimeColor;
 }

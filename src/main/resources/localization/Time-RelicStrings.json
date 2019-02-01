@@ -1,0 +1,9 @@
+{
+  "Chocolate": {
+    "NAME": "Chocolate",
+    "FLAVOR": "Yummm!",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain 1 health for each energy spent, up to a maximum of 10 per combat."
+    ]
+  }
+}

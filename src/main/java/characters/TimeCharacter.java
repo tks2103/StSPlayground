@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import patches.TimeEnum;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class TimeCharacter extends CustomPlayer {
@@ -49,7 +50,7 @@ public class TimeCharacter extends CustomPlayer {
     @Override
     public CharSelectInfo getLoadout() {
         return new CharSelectInfo("TimeClass",
-                "This is a Time Class",
+                "This is a TimeColor Class",
                 60,
                 60,
                 0,
@@ -63,7 +64,9 @@ public class TimeCharacter extends CustomPlayer {
 
     @Override
     public ArrayList<String> getStartingRelics() {
-        return new ArrayList<String>();
+        ArrayList<String> retVal = new ArrayList<>();
+        retVal.add("Chocolate");
+        return retVal;
     }
 
     @Override
@@ -87,7 +90,7 @@ public class TimeCharacter extends CustomPlayer {
 
     @Override
     public AbstractCard.CardColor getCardColor() {
-        return TimeEnum.Time;
+        return TimeEnum.TimeColor;
     }
 
     @Override
@@ -127,7 +130,7 @@ public class TimeCharacter extends CustomPlayer {
 
     @Override
     public String getLocalizedCharacterName() {
-        return "Time Class";
+        return "TimeColor Class";
     }
 
     @Override
