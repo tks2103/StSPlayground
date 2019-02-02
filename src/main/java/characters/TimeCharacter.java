@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import patches.TimeEnum;
 
 import java.lang.reflect.Array;
@@ -66,6 +67,7 @@ public class TimeCharacter extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
         retVal.add("Chocolate");
+        UnlockTracker.markRelicAsSeen("Chocolate");
         return retVal;
     }
 

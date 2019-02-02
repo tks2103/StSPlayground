@@ -2,6 +2,9 @@ import basemod.interfaces.*;
 import cards.Strike_Time;
 import characters.TimeCharacter;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.helpers.CardHelper;
+import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,10 +22,23 @@ import java.nio.charset.StandardCharsets;
 public class TimeClass implements PostBattleSubscriber, EditCharactersSubscriber, EditCardsSubscriber,
         EditRelicsSubscriber, EditStringsSubscriber {
 
-    private static final Logger logger = LogManager.getLogger(TimeClass.class);
+    public static final Logger logger = LogManager.getLogger(TimeClass.class);
+
+    private static final Color TIME_COLOR = CardHelper.getColor(90.0f, 90.0f, 100.0f);
 
     private TimeClass() {
         BaseMod.subscribe(this);
+
+        BaseMod.addColor(TimeEnum.TimeColor,
+                TIME_COLOR, TIME_COLOR, TIME_COLOR, TIME_COLOR, TIME_COLOR, TIME_COLOR, TIME_COLOR,
+                "images/card/bg_attack_witch.png",
+                "images/card/bg_skill_witch.png",
+                "images/card/bg_power_witch.png",
+                "images/card/card_witch_orb.png",
+                "images/portrait/bg_attack_witch.png",
+                "images/portrait/bg_skill_witch.png",
+                "images/portrait/bg_power_witch.png",
+                "images/portrait/card_witch_orb.png");
     }
 
     public static void initialize() {
@@ -51,7 +67,7 @@ public class TimeClass implements PostBattleSubscriber, EditCharactersSubscriber
 
     @Override
     public void receiveEditRelics() {
-        BaseMod.addRelicToCustomPool(new Chocolate(), TimeEnum.TimeColor);
+        RelicLibrary.add(new Chocolate());
     }
 
     @Override
