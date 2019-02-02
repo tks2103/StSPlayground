@@ -7,10 +7,14 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import static patches.TimeEnum.TimeClass;
 
 public class Chocolate extends CustomRelic {
+
+    public static final Logger logger = LogManager.getLogger(Chocolate.class);
 
     private int energyUsed = 0;
 
@@ -33,6 +37,8 @@ public class Chocolate extends CustomRelic {
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
         energyUsed += c.costForTurn;
+        logger.info(c.costForTurn);
+        logger.info(energyUsed);
     }
 
     @Override
