@@ -1,4 +1,5 @@
 import basemod.interfaces.*;
+import cards.Autoplay;
 import cards.Strike_Time;
 import characters.TimeCharacter;
 import com.badlogic.gdx.Gdx;
@@ -63,6 +64,7 @@ public class TimeClass implements PostBattleSubscriber, EditCharactersSubscriber
     @Override
     public void receiveEditCards() {
         BaseMod.addCard(new Strike_Time());
+        BaseMod.addCard(new Autoplay());
     }
 
     @Override

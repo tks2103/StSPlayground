@@ -82,6 +82,7 @@ public class TimeCharacter extends CustomPlayer {
         retVal.add("Strike_Time");
         retVal.add("Strike_Time");
         retVal.add("Strike_Time");
+        retVal.add("Autoplay");
         return retVal;
     }
 

@@ -10,8 +10,6 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static patches.TimeEnum.TimeClass;
-
 public class Chocolate extends CustomRelic {
 
     public static final Logger logger = LogManager.getLogger(Chocolate.class);
