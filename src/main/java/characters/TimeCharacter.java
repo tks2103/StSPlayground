@@ -17,7 +17,6 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import patches.TimeEnum;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class TimeCharacter extends CustomPlayer {
@@ -74,10 +73,6 @@ public class TimeCharacter extends CustomPlayer {
     @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add("Strike_Time");
-        retVal.add("Strike_Time");
-        retVal.add("Strike_Time");
-        retVal.add("Strike_Time");
         retVal.add("Strike_Time");
         retVal.add("Strike_Time");
         retVal.add("Strike_Time");

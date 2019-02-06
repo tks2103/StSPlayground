@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Strike_Time extends AbstractCard {
+public class Strike_Time extends AbstractTimeCard {
 
     public Strike_Time() {
         super("Strike_Time",
